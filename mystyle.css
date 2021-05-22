@@ -20,17 +20,19 @@ nav{
 }
 
 main {
-    background: yellow;
+    /*background: yellow;*/
     grid-area: main;
-    border-radius:var(--main-radius);
-    padding-top:var(--main-padding);
+    background-image: url(media/pexels-photo-1034857.jpeg);
+    
+    
+    
 }
 
 #sidebar {
     background: grey;
     grid-area: sidebar;
-    border-radius:var(--main-radius);
-    padding-top:var(--main-padding);
+    
+    
     overflow: hidden;
 }
 
@@ -45,29 +47,40 @@ main {
 #content1{
     background: green;
     grid-area: content1;
-    border-radius:var(--main-radius);
-    padding-top:var(--main-padding);
+    background-image: url(media/Banana.png);
+    background-size: 100%;
+    overflow: hidden;
+    
+    
 }
 
 #content2 {
     background: orange;
     grid-area: content2;
-    border-radius:var(--main-radius);
-    padding-top:var(--main-padding);
+
+    
+    
 }
 
 #content3 {
     background: #753905;
     grid-area: content3;
-    border-radius:var(--main-radius);
-    padding-top:var(--main-padding);
+    background-image: url(media/pexels-photo-7194986.jpeg);
+    background-size: cover;
+    overflow: hidden;
+
+    
+
 }
 
 footer {
     background: grey;
     grid-area: footer;
-    border-radius:var(--main-radius);
-    padding-top:var(--main-padding);
+    background-image: url(media/pexels-photo-3310691.webp);
+    background-size: cover;
+    overflow: hidden;
+    
+    
 }
 
 @media only screen and (max-width: 500px){
@@ -214,7 +227,7 @@ span {
 
     /*grid-area: "mysecondbody";*/
     
-    padding-top:var(--main-padding);
+    
     background-image: url(media/pexels-photo-3310691.webp);
     background-size: cover;
 }
