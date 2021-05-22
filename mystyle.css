@@ -216,7 +216,7 @@ span {
     /*grid-area: "mysecondbody";*/
     
     padding-top:var(--main-padding);
-    background-image: url(media/backgrounds/pexels-photo-3310691.webp);
+    background-image: url(media/pexels-photo-3310691.webp);
     background-size: cover;
 }
 
