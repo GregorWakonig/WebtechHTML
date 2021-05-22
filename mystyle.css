@@ -2,14 +2,14 @@
 .container {
     display:grid;
     height:100vh;
-    grid-template-columns: 1.2fr 1fr 1fr 1fr;
+    grid-template-columns: 1.4fr 1.2fr 1.6fr 1fr;
     grid-template-rows: 0.2fr 1.6fr 1.3fr 0.6fr;
     grid-template-areas:
     "nav nav nav nav"
     "sidebar main main main"
     "sidebar content1 content2 content3"
     "footer footer footer footer";
-    grid-gap: 0.2rem;
+    grid-gap: 3px;
     font-weight:600;
     text-align:center;
 
@@ -35,8 +35,7 @@ main {
 }
 
 #sidebar video {
-    /*width: 450px !important;*/
-    height: auto !important;
+    height: 80vh !important;
 }
 
 #sidebar div {
