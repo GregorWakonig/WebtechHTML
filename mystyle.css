@@ -1,12 +1,8 @@
-:root{
-    --main-radius:5px;
-    --main-padding:5px;
-}
 
 .container {
     display:grid;
     height:100vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1.2fr 1fr 1fr 1fr;
     grid-template-rows: 0.2fr 1.6fr 1.3fr 0.6fr;
     grid-template-areas:
     "nav nav nav nav"
@@ -14,23 +10,17 @@
     "sidebar content1 content2 content3"
     "footer footer footer footer";
     grid-gap: 0.2rem;
-    font-family:"Verdana", serif;
     font-weight:600;
-    text-transform: uppercase;
-    color: lightblue;
     text-align:center;
 
 }
 
-nav{
-    /*background: red;*/
+nav{    
     grid-area: nav;
-    border-radius:var(--main-radius);
-    padding-top:var(--main-padding);
 }
 
 main {
-    background: blue;
+    background: yellow;
     grid-area: main;
     border-radius:var(--main-radius);
     padding-top:var(--main-padding);
@@ -41,7 +31,6 @@ main {
     grid-area: sidebar;
     border-radius:var(--main-radius);
     padding-top:var(--main-padding);
-
     overflow: hidden;
 }
 
@@ -51,9 +40,7 @@ main {
 }
 
 #sidebar div {
-
     margin-top: 150%;
-
 }
 
 #content1{
@@ -71,7 +58,7 @@ main {
 }
 
 #content3 {
-    background: teal;
+    background: #753905;
     grid-area: content3;
     border-radius:var(--main-radius);
     padding-top:var(--main-padding);
@@ -83,7 +70,6 @@ footer {
     border-radius:var(--main-radius);
     padding-top:var(--main-padding);
 }
-
 
 @media only screen and (max-width: 500px){
     .container{
@@ -100,7 +86,6 @@ footer {
     }
 }
 
-
 nav p {
     float: left;
     font-family: "Verdana", sans-serif;
@@ -110,10 +95,8 @@ nav p {
     padding: 0px 30px; /* left and right is the 2nd value, top/bot the first one */
 }
 
-
 nav ul {
     float: left;
-
 }
 
 nav ul li {
@@ -162,14 +145,13 @@ nav ul li ul li a:hover{
 }
 
 
-
 /*THINGS*/
 
 h1 {
     color: black;
     font-family: "Verdana", sans-serif;
     font-weight: bold;
-    font-size:6vw;
+    font-size:4vw;
 
 
 }
@@ -199,6 +181,11 @@ h6 {
     font-family: "Verdana", sans-serif;
     font-weight: bold;
 }
+
+p {
+    font-family: "Georgia", serif;
+}
+
 .imageClass {
     max-width:100%;height:auto;
 }
@@ -208,26 +195,32 @@ h6 {
 }
 
 
-#myIframe {
-    /*height: 100px;*/
-    /*position: relative;
-      padding-bottom: 56.10%;
-      height: 0;
-      overflow: hidden;*/
-}
 #myIframe iframe,
 #myIframe object,
 #myIframe embed {
-    position: absolute;
-    top: 40%;
-    left: 25%;
-    width: 30%;
-    height: 30%;
+    position: relative;
+    height:50vh;
+    width:80vh;
 }
 
 span {
     color:yellow;
 }
+
+
+
+
+
+.mysecondbody {
+
+    /*grid-area: "mysecondbody";*/
+    
+    padding-top:var(--main-padding);
+    background-image: url(media/backgrounds/pexels-photo-3310691.webp);
+    background-size: cover;
+}
+
+
 
 .bananabody {
 
@@ -249,14 +242,7 @@ span {
 
 }
 
-.mysecondbody {
 
-    grid-area: "mysecondbody";
-    border-radius:var(--main-radius);
-    padding-top:var(--main-padding);
-    background-image: url(media/backgrounds/pexels-photo-3310691.webp);
-    background-size: cover;
-}
 
 
 
